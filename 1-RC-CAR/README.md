@@ -4,21 +4,22 @@
 - High-school project in 2016 
 - Remote Control Car with RF communication
 - Old-school 8-bit PICs designs
+- 2 simple 1-layer PCB layouts
 
 ## Description
 My journey into electronics began when I was a child. I have always been very interested in knowing how things work and I still remember that science fair project when my father and I did a simple circuit with an alkaline battery a switch and a lamp to show how the electricity works. That was amazing for me in fourth or fifth grade (maybe).
 
 Then in the school, sixth grade, I made a robot brush and I was more than excited seeing what a battery and a motor can do. After that years, my curiosity in this world of electricity and electronics grew and grew. 
 
-I tried make a wind farm with some motors and leds, burning them up by not use any resistance. Tried a fail electric boat to play with friends but it ended up short-circuited at the bottom of my grandmother's tank. And on and on... Project after project I was discovering this beautiful world even trying to write a book in the high-school to consolidate all of my knowledge until then and help other students with the basics. A crazy thing for sure!.
+I tried make a wind farm with some motors and LEDs, burning them up by not use any resistance. Tried a fail electric boat to play with friends but it ended up short-circuited at the bottom of my grandmother's tank... Project after project I was discovering this beautiful world even trying to write a book in the high-school to consolidate all of my knowledge until then and help other students with the basics. A crazy thing for sure!.
 
 This curiosity along with my passion for remote control cars (another interesting story) guided me into creating my own rc cars with my basic knowledge in electronics and components back then in 10th grade.
 
 First I tried infrared communication with a transistor to control the motor. It was fun to understand how IR works using a normal IR LED and a photodiode polarized inversely to get the signal from the emitter.
 
-This solution was simple, but in practice it presents a lot of problems. The main one was the transmission distance. With a conservative polarization it reaches 5 to 8 meters, but when I try to increase that amount by leveling up the reverse current in the transistor base excitation circuit the car becomes unstable and uncontrollable because of the noise of solar light during the day. So now the car was only usable at night. Additionally, the emitter just sent one instruction to the car, and that was just to go straight. That sounds a little boring, but hey, that was my first own RC car.
+This solution was simple, but in practice it presents a lot of problems. The main one was the transmission distance. With a conservative polarization it reaches 5 to 8 meters, but when I try to increase that amount by leveling up the reverse current the car becomes unstable and uncontrollable because of the noise of solar light during the day. So the car was only usable at night. Additionally, the emitter just sent one instruction to go straight. That sounds a little boring, but hey, that was my first own RC car.
 
-My electronic lab setup in 2016 with my own RGB-flashing IR car:
+My electronic lab setup in 2016 and my own IR car with flashing RGB lights:
 ![alt text](setup-with-IR-car.jpg "My electronic lab setup in 2016 with a RGB flashing IR car")
 
 After that first experience, I decided to study a little bit more about how to improve my design and make a better car. With that motivation finally I ended up using a universal transmitter from a TV control and a phototransistor with 38kHz filter to demodulate the signal. That was a big improvement in the design along with the transistorized H-bridge for the motor control, allowing more commands through a long distance. That was definitely a lot more funny than the previous versions.
@@ -29,7 +30,7 @@ This was the concept design for this new version of the car:
 
 ![alt text](car-concept-design.jpg "Concept design of new RF car circuit")
 
-The new design was really ambitious and I also proposed the concept design of the control:
+The new concept design was really ambitious, finally I ended cutting a lot of non-critical features to leave only the most important parts. I also proposed the concept design of the control:
 
 ![alt text](control-concept-design.jpg "Concept design of new RF control circuit")
 

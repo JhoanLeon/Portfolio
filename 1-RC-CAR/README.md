@@ -1,8 +1,8 @@
-RC Car
+# RC Car
 
-High school project developed in 2016 for an electronics fair with other schools.
+My journey into electronics began when I was a child. I have always been very interested in knowing how things work and I still remember that science fair project when my father and I did a simple circuit with an alkaline battery a switch and a lamp to show how the electricity works. That was amazing for me in fourth or fifth grade (maybe). Then in the school, sixth grade, I made a robot brush and I was more than excited seeing what a battery and a motor can do. After that years, my curiosity in this world of electricity and electronics grew and grew. I tried make a wind farm with some motors and leds, burning them up by not use any resistance, Try a fail electric boat to play with friends but it ended up short-circuited at the bottom of my grandmother's tank. And on and on, project after project I was discovering this beautiful world even trying to write a book in the high-school to consolidate all of my knowledge until then and help other students with the basics. A crazy thing for sure!. 
 
-When I was a kid I was really interested in how things worked. This curiosity along with my passion for remote control cars guided me into creating my own rc cars with my basic knowledge in electronics and components back then.
+This curiosity along with my passion for remote control cars (another interesting story) guided me into creating my own rc cars with my basic knowledge in electronics and components back then in 10th grade.
 
 First I tried infrared communication. It was fun to understand how IR worked using a normal IR LED and a photodiode polarized inversely to get the signal from the emitter. 
 
@@ -17,3 +17,7 @@ After that first experience I decided to study a little bit more about how to im
 But in 2016 I started to formally study electronics at my school, and then I learned about microcontrollers and a bunch of different components, and now understand a little bit more about how they work and how you can use them in a circuit. With that in mind, I propose this… 
 
 (Photo on final design)
+
+High school project developed in 2016 for an electronics fair with other schools.
+
+

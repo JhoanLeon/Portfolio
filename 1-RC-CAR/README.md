@@ -3,7 +3,7 @@
 ## Summary
 - High-school project in 2016 
 - Remote Control Car with RF communication
-- Designs with old-school 8-bit PICs
+- Old-school 8-bit PICs designs
 
 ## Description
 My journey into electronics began when I was a child. I have always been very interested in knowing how things work and I still remember that science fair project when my father and I did a simple circuit with an alkaline battery a switch and a lamp to show how the electricity works. That was amazing for me in fourth or fifth grade (maybe).
@@ -30,5 +30,5 @@ In 2016 I started to formally study electronics at my high-school, and then I le
 
 (Photo of both schematics)
 
-Unfornutanely, I don't have any photo of the final car, I even went to an inter-scholar fair of robotics at the end of 2016 to present my modern and very fast RC Car with RF communication. That car give me a lot of fun and even more knowledge about electronics and why this is my passion. It probably ended up in my personal graveyard of dismantled old toys and RC cars for recycling their components.
+Unfortunately, I don't have any photo of the final car, I even went to an inter-scholar fair of robotics at the end of 2016 to present my modern and very fast RC Car with RF communication. That car give me a lot of fun and even more knowledge about electronics and why this is my passion. It probably ended up in my personal graveyard of dismantled old toys and RC cars for recycling their components.
 

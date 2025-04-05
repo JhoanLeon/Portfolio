@@ -7,34 +7,33 @@
 - 2 simple 1-layer PCB layouts
 
 ## Description
-My journey into electronics began when I was a child. I have always been very interested in knowing how things work and I still remember that science fair project when my father and I did a simple circuit with an alkaline battery a switch and a lamp to show how the electricity works. That was amazing for me in fourth or fifth grade (maybe).
+My journey into electronics began when I was a child. I have always been deeply interested in understanding how things work, and I still remember the science fair project where my father and I built a simple circuit with an alkaline battery, a switch, and a lamp to demonstrate how electricity works. That was an amazing experience for me back in fourth or fifth grade (I’m not entirely sure which).
 
-Then in the school, sixth grade, I made a robot brush and I was more than excited seeing what a battery and a motor can do. After that years, my curiosity in this world of electricity and electronics grew and grew. 
+Then, in sixth grade at school, I made a brush robot, and I was beyond excited to see what a battery and a motor could do. From that point on, my curiosity about the world of electricity and electronics kept growing and growing.
 
-I tried make a wind farm with some motors and LEDs, burning them up by not use any resistance. Tried a fail electric boat to play with friends but it ended up short-circuited at the bottom of my grandmother's tank... Project after project I was discovering this beautiful world even trying to write a book in the high-school to consolidate all of my knowledge until then and help other students with the basics. A crazy thing for sure!.
+I attempted to make a wind farm using some motors and LEDs, only to burn them out by not using any resistors. I also tried to make an electric boat to play with friends, but it ended up short-circuiting at the bottom of my grandmother's water tank. Project after project, I continued discovering this fascinating world—even trying to write a book in high school to consolidate all the knowledge I had gained until that point and help other students with the basics. It was a crazy idea, for sure!
 
-This curiosity along with my passion for remote control cars (another interesting story) guided me into creating my own rc cars with my basic knowledge in electronics and components back then in 10th grade.
+This curiosity, combined with my passion for remote control (RC) cars (another interesting story), led me to create my own RC cars using my basic electronics knowledge back in 10th grade.
 
-First I tried infrared communication with a transistor to control the motor. It was fun to understand how IR works using a normal IR LED and a photodiode polarized inversely to get the signal from the emitter.
+At first, I tried using infrared (IR) communication with a transistor to control the motor. It was fun to learn how IR works by using a simple IR LED and a photodiode polarized inversely to receive the signal from the emitter.
 
-This solution was simple, but in practice it presents a lot of problems. The main one was the transmission distance. With a conservative polarization it reaches 5 to 8 meters, but when I try to increase that amount by leveling up the reverse current the car becomes unstable and uncontrollable because of the noise of solar light during the day. So the car was only usable at night. Additionally, the emitter just sent one instruction to go straight. That sounds a little boring, but hey, that was my first own RC car.
+This solution was simple but came with many practical problems. The main issue was the transmission distance. With conservative polarization, it could only reach 5 to 8 meters. When I tried to extend that range by increasing the reverse current, the car became unstable and uncontrollable due to solar light noise during the day. As a result, the car was only usable at night. Additionally, the emitter could only send one instruction—to go straight. That might sound a little dull, but hey, it was my very first RC car!
 
 My electronic lab setup in 2016 and my own IR car with flashing RGB lights:
 ![alt text](setup-with-IR-car.jpg "My electronic lab setup in 2016 with a RGB flashing IR car")
 
-After that first experience, I decided to study a little bit more about how to improve my design and make a better car. With that motivation finally I ended up using a universal transmitter from a TV control and a phototransistor with 38kHz filter to demodulate the signal. That was a big improvement in the design along with the transistorized H-bridge for the motor control, allowing more commands through a long distance. That was definitely a lot more funny than the previous versions.
+After that initial experience, I decided to study more about improving my design to make a better car. Motivated by this, I eventually ended up using a universal transmitter from a TV remote and a phototransistor with a 38kHz filter to demodulate the signal. This was a significant improvement in the design, along with the addition of a transistorized H-bridge for motor control, allowing more commands over longer distances. This version was far more fun than the earlier one.
 
-In 2016 I started to formally study electronics at my high-school, and then I learned about microcontrollers and a bunch of different components, and now understand a little bit more about how they work and how you can use them in a circuit. With that in mind, I propose a brand-new version of the RC Car but this time with RF communication through a NRF24 chip, a microcontroller and a IC H-Bridge. 
+In 2016, I formally began studying electronics at my high school, where I learned about microcontrollers and a variety of components. I began to understand how these components work and how to use them in circuits. With this new knowledge, I proposed a brand-new version of the RC car, this time with RF communication using an NRF24 chip, a microcontroller, and an IC H-Bridge.
 
 This was the concept design for this new version of the car:
-
 ![alt text](car-concept-design.jpg "Concept design of new RF car circuit")
 
-The new concept design was really ambitious, finally I ended cutting a lot of non-critical features to leave only the most important parts. I also proposed the concept design of the control:
+The new concept design was quite ambitious, and I eventually cut many non-critical features to focus on the most important parts. I also proposed the concept design for the controller:
 
 ![alt text](control-concept-design.jpg "Concept design of new RF control circuit")
 
-I design the PCB for the Car and the Control, but unfortunately I don't have a lot of photos from that first PCB design, I could only recover two blurry-photos from the unterminated schematics of both designs.
+I designed the PCBs for both the car and the controller. Unfortunately, I don’t have many photos of that first PCB design—I could only recover two blurry photos of the unfinished schematics for both designs
 
 Unfinished schematic of the car:
 ![alt text](car-schematic.png "Unfinished schematic of the car")
@@ -42,5 +41,4 @@ Unfinished schematic of the car:
 Unfinished schematic of the control:
 ![alt text](control-schematic.png "Unfinished schematic of the control")
 
-Unfortunately, I don't have any photo of the final car, I even went to an inter-scholar fair of robotics at the end of 2016 to present my modern and very fast RC Car with RF communication. That car give me a lot of fun and even more knowledge about electronics and why this is my passion. It probably ended up in my personal graveyard of dismantled old toys and RC cars for recycling their components.
-
+Sadly, I don’t have any photos of the final car. However, I did present my modern and very fast RC car with RF communication at an inter-school robotics fair at the end of 2016. That car brought me a lot of fun and even more knowledge about electronics, solidifying why this field is my passion. It likely ended up in my personal graveyard of dismantled old toys and RC cars, where I recycled its components.

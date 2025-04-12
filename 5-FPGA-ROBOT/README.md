@@ -2,37 +2,27 @@
 
 ## Summary
 - Degree project for Electronic Engineer in 2021
+- Autonomous Mobile Robot with omnidirectional wheels
 - 1 PCB with 2-layers for integration modules 
-- FPGA based device with NodeMCU co-processor
-- 
+- FPGA based device with a NodeMCU as co-processor
 
 ## Description
-This was my degree project for the title of Electronic Engineer at the University. During my degree I was really interested in digital systems and FPGA design and this project is an example of that. With this project I wanted to apply a lot of knowledge in embedded systems and even robotics. The goal of this robot was to show the advantages of parallel hardware computing for high concurrent tasks, like in a robotics application, and compare them with a typical processor.
+This was my degree project for the title of Electronic Engineer at the University. During my studies, I was deeply interested in digital systems and FPGA design, and this project is a reflection of that interest. Through this project, I aimed to apply extensive knowledge in embedded systems and even robotics. The goal of this robot was to demonstrate the advantages of parallel hardware computing for highly concurrent tasks, such as in a robotics application, and to compare them with a typical processor.
+
+The PCB for this robot had two layers and was designed in EAGLE. It was created to integrate all components in a compact way, in accordance with the robotic platform proposed for the project. This system consists of main processing boards and peripherals like power converters, voltage translators, ultrasonic sensors, and more.
+
+![alt text](final_pcb.png "PCB design")
 
 
+![alt text](bare-pcb.jpeg "Bare PCB")
 
-The project consisted of a complete electronic system with all subcircuits to perform tasks like controlling lights, opening doors, setting alarms, and even displaying information on a physical screen. The name of the project, MAFE, is an acronym in Spanish for Automation Model for Conventional Houses (Modelo de Automatización Para Casas Convencionales).
+This robot can move in any direction, thanks to its four omnidirectional wheels and the full drivers that independently control each one. The FPGA architecture was designed in 17-bit fixed-point format due to resource constraints inside the FPGA (initially, the architecture was proposed in 32-bit single-precision floating-point format). This hardware design calculates the robot's global position using odometry based on its wheel encoders and internal accelerometers. Additionally, it can perform path planning to move from point A to point B with autonomous navigation, including predefined reaction maneuvers to avoid object collisions.
 
-MAFE electronic systems interconnected before final installation:
-![alt text](electronic-system.jpg "MAFE electronic systems")
+Final robot assembly
+![alt text](fpga_robot.jpeg "Complete ROBOT")
 
-This project was designed in PROTEUS 8 PROFESSIONAL with two PIC16F877A microcontrollers as the main controllers, programmed in C language using PIC C COMPILER and PICkit2. The five modules were designed to avoid having one large, complex PCB and to simplify wiring inside the model house. The five modules are as follows:
+The most challenging aspect of this project was the architecture design for the FPGA, given the real hardware constraints and the unforeseen events that projects of this complexity often entail. I developed the digital portion of the project using QUARTUS PRIME LITE, as the FPGA was an Intel Altera Cyclone V. The NodeMCU was programmed with Arduino to provide a graphical web interface for controlling the robot and monitoring its telemetry.
 
-- Control: Microcontroller board with numerous IO for all the house peripherals. The top layer traces were essentially jumper wires.
-![alt text](Control.png "Control board")
+Finally, I successfully delivered the project on time with the expected functionality. I completed my degree in Electronics Engineering in 2021. Attached is a picture of the final FPGA design for a quick glance.
 
-- Power: Relays for high-power loads. This board includes an 8-relay driver circuit with a logic control signal of 5VDC for 110-220VAC loads.
-![alt text](Power.png "Power board")
-
-- Sensors: Doors and windows switches. This circuit connects reed switches and IR sensors to detect events in the house.
-![alt text](Sensors.png "Sensors board")
-
-- Motors: For doors, windows, and garage actuators. This PCB contains H-bridges and servo drivers to control moving parts in the house.
-![alt text](Motors.png "Motors board")
-
-- Communication: Bluetooth and LCD circuits. Additionally, this module includes transistorized drivers for DC loads like ambient lighting and sirens.
-![alt text](Communication.png "Cmmunication board")
-
-The project was challenging enough for my younger self, and all of those boards were designed, programmed, and manufactured by me. The AC-DC converter was repurposed from an old printer to avoid the complexity of designing that power stage. Ultimately, the project worked well; I earned my Technician degree, and the model house turned out great.
-
-![alt text](complete-project.jpg "MAFE project")
+![alt text](final_architecture_17b.png "FPGA Design")

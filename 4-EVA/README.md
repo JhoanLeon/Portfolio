@@ -1,36 +1,40 @@
 # WRISTBANDCARE
 
 ## Summary
-- Undergraduate workshop course project in 2021 
-- Portable device with Bluetooth and USB rechargable battery
-- Quick prototype with modules integration
-- Small 2-layer PCB with SMT and THT components
+- Scientific equipment for robotic student project 2020
+- Dual processing with an Arduino UNO and a Rasperry Pi Zero W
+- Sensors, Actuators and CAM control with ROS and baremetal code
+- Integration boards with 2-layer layouts for main and connectors PCBs
 
 ## Description
-During my undergraduate studies in electronics engineering at the University, I learned a lot about a wide range of different topics. However, due to the accelerated pace and the amount of academic work I carried, the course projects had to be quick prototypes that were as functional as possible. This project is a clear example of this.
+Between 2020 and 2021 I was part of a robotics student team in my University with the purpose of developing a ROVER for international competitions such us URC (University Rover Challenge) and ERC (European Rover Challenge). I participate in the Sensory and Extraction team (the whole group was divided to work in specific robot subsystems). This team had the responsibility of developing the scientific team aboard the robot for different tests that involved, among others, the analysis of soils for the determination of extinct and existing life.
 
-For a workshop course in my last year of university, I had to choose a problem to solve using an electronic device. The problem I chose was the health monitoring of people using wearable devices. During those years, wearables began to gain high popularity. The proposed device had to measure heart rate and some environmental variables, such as temperature, humidity, and solar radiation, to generate health recommendations for people based on their surroundings and their heart activity. All of the measurements and communication with the device had to be wireless through Bluetooth and powered by a USB rechargeable battery.
+Complete ROVER in this photo
+![alt text](ROVER.jpg "ROVER photo")
 
-With that in mind, I designed an integration board for some pre-made modules that combined to meet all the specifications. The final design was a 68.71mm x 31.12mm PCB with two layers and a mix of passive SMT components with THT modules.
+With that in mind the team decide to create EVA, which is an acronym in spanish of Alien Life Evaluator (Evaluador de Vida Alienígena). This electromechanical system was designed to extract, collect and analyse soil samples aboard the robot without any human intervention more than the supervision of chemical tests from the monitoring station. I was the main electronic designer of the Sensory and Extraction team and, together with the students of science and mechanics, we designed from the requirements this system that we could prototype and test in a desert relevant environment for the application.
 
-![alt text](pcb_design.JPG "Complete PCB design")
+Photo of this prototype in desert testing
+![alt text](desert-test.jpg "ROVER test")
 
-This simple PCB was the foundation of the device. In that particular project, the manufacturing recommendations and best practices for PCB design were not even considered because of the rush and the handmade nature of the project assembly. The final integration of modules involved some important components, such as:
+The electronic system was a main board with processing and drivers for sensores measurement and actuators control and secondary PCBs for connectors. The main circuit looked like this:
 
-- Microcontroller ATtiny176 on a Digispark board
-- UV Ligth Sensor ML8511
-- HTU21D for environmental temperature and humitidy
-- MAX30100 for oximetry and heart rate monitor
-- SPI flash memory of 16MBit W25Q16BVSSIG
-- BLE module JDY-23 with a CC2541 chip inside
-- And some more for power management
+Main schematic
 
-All of these components needed to fit into a wristband-sized device! But nothing that a soldering iron and a glue gun couldn't solve. I am still impressed by the magic one can create in a single night of work. Here's a glimpse of the internal PCB assembly:
+![alt text](final-schematic-main.png "Main schematic")
 
-![alt text](internal_assembly.jpg "Internal PCB assembly")
+Main layout
 
-Clearly, for that academic project, we didn't have a product designer, but the final goal of creating a functional device was accomplished. We were able to send messages through Bluetooth with all variables measured and store back-up information inside the non-volatile flash memory. I clearly remember the tight constraint of code space that we had with that low-power microcontroller.
+![alt text](pcb-main.png "Main pcb")
 
-![alt text](final_device.jpg "Final device")
+Main board assembled
 
-It was a pretty decent final device for a first-time quick prototype, packed with a lot of hardware in the form of pre-made modules and wireless communication. Looking back, this was an interesting project that provided real, practical knowledge about electronics product development.
+![alt text](main-board.jpeg "Main board assembled")
+
+That you can see the RPI and the Arduino with a bunch of connectors and premade modules. The goal here was to get a working prototype with the resources and capabilities that we had at that time. The final boards and final assembly in case looked like this:
+
+![alt text](all-boards.jpg "All boards")
+
+![alt text](case.jpeg "Case assembled")
+
+Finally this system can control steppers, servos and other DC motors. In addition, this electronics can read gas sensors and transmit live camera video to the monitoring station to take photos and evidence of soil samples and chemical tests. 

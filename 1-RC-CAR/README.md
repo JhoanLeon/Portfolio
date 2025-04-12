@@ -2,7 +2,7 @@
 
 ## Summary
 - High-school project in 2016 
-- Remote Control Car with RF communication
+- Remote Control Car with IR communication
 - Old-school 8-bit PICs designs
 - Simple 1-layer PCB layout
 
@@ -27,7 +27,7 @@ After that initial experience, I decided to study more about improving my design
 I even drew the shematics with pen and paper at that time
 ![alt text](paper-schematic.jpg "Schematic drawing in paper")
 
-In 2016, I formally began studying electronics at my high school, where I learned about microcontrollers and a variety of components. I began to understand how these components work and how to use them in circuits. I designed the PCBs for this project and here I can recover these 3D renders of that first PCB:
+In 2016, I formally began studying electronics at my high school, where I learned about microcontrollers and a variety of components. I began to understand how these components work and how to use them in circuits. I designed the PCB for this project and here I could recover the 3D renders of that first PCB:
 
 ![alt text](pcb1.jpg "PCB1")
 

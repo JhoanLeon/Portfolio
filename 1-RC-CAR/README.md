@@ -4,7 +4,7 @@
 - High-school project in 2016 
 - Remote Control Car with RF communication
 - Old-school 8-bit PICs designs
-- 2 simple 1-layer PCB layouts
+- Simple 1-layer PCB layout
 
 ## Description
 My journey into electronics began when I was a child. I have always been deeply interested in understanding how things work, and I still remember the science fair project where my father and I built a simple circuit with an alkaline battery, a switch, and a lamp to demonstrate how electricity works. That was an amazing experience for me back in fourth or fifth grade (I’m not entirely sure which).
@@ -24,21 +24,15 @@ My electronic lab setup in 2016 and my own IR car with flashing RGB lights:
 
 After that initial experience, I decided to study more about improving my design to make a better car. Motivated by this, I eventually ended up using a universal transmitter from a TV remote and a phototransistor with a 38kHz filter to demodulate the signal. This was a significant improvement in the design, along with the addition of a transistorized H-bridge for motor control, allowing more commands over longer distances. This version was far more fun than the earlier one.
 
-In 2016, I formally began studying electronics at my high school, where I learned about microcontrollers and a variety of components. I began to understand how these components work and how to use them in circuits. With this new knowledge, I proposed a brand-new version of the RC car, this time with RF communication using an NRF24 chip, a microcontroller, and an IC H-Bridge.
+I even drew the shematics with pen and paper at that time
+![alt text](paper-schematic.jpg "Schematic drawing in paper")
 
-This was the concept design for this new version of the car:
-![alt text](car-concept-design.jpg "Concept design of new RF car circuit")
+In 2016, I formally began studying electronics at my high school, where I learned about microcontrollers and a variety of components. I began to understand how these components work and how to use them in circuits. I designed the PCBs for this project and here I can recover these 3D renders of that first PCB:
 
-The new concept design was quite ambitious, and I eventually cut many non-critical features to focus on the most important parts. I also proposed the concept design for the controller:
+![alt text](pcb1.jpg "PCB1")
 
-![alt text](control-concept-design.jpg "Concept design of new RF control circuit")
+![alt text](pcb2.jpg "PCB2")
 
-I designed the PCBs for both the car and the controller. Unfortunately, I don’t have many photos of that first PCB design—I could only recover two blurry photos of the unfinished schematics for both designs
+![alt text](pcb3.jpg "PCB3")
 
-Unfinished schematic of the car:
-![alt text](car-schematic.png "Unfinished schematic of the car")
-
-Unfinished schematic of the control:
-![alt text](control-schematic.png "Unfinished schematic of the control")
-
-Sadly, I don’t have any photos of the final car. However, I did present my modern and very fast RC car with RF communication at an inter-school robotics fair at the end of 2016. That car brought me a lot of fun and even more knowledge about electronics, solidifying why this field is my passion. It likely ended up in my personal graveyard of dismantled old toys and RC cars, where I recycled its components.
+I began to design with Proteus Professional. For my firsts PCB designs I had to iron and do the etching process of the PCBs by hand in the school laboratory. Sadly, I don’t have any photos of the final car. However, I did present my modern and very fast RC car at an inter-school robotics fair at the end of 2016. That car brought me a lot of fun and even more knowledge about electronics, solidifying why this field is my passion. It likely ended up in my personal graveyard of dismantled old toys and RC cars.

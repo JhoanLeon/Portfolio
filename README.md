@@ -1,1 +1,1 @@
-This is my portfolio
+This is my portfolio, the most interesting and/or relevant projects I have done.

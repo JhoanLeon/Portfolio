@@ -8,20 +8,24 @@
 - +10k manufactured devices
 
 ## Description
-This special project was my first mass produced device with thousands of products deployed in the market. The client requires a very cheap audio dongle to be compatible with two specific headphones of different brands. This device was intended for call center application when the quality of speakers and microphone is key to operators and clients. The solution was based in a single-chip solution.
+This special project was my first mass-produced device, with thousands of units deployed in the market. The client required a very affordable audio dongle compatible with two specific headphone models from different brands. This device was intended for call center applications, where the quality of speakers and microphones is critical for both operators and clients.
 
-The cos efecttiveness of this project was critical, because the volume of the product was attach to the price. The single-chip solution looked like the best way to acomplish this goal. However, the functional requirement was very demanding: the device have to sound perfectly with two different headphones brands. Initially that looked simple, but this headphone references had very different capabilities, specificially in speakers and micrphones specifications. 
+The cost-effectiveness of this project was crucial because the product's volume was directly tied to its price. The single-chip solution appeared to be the best way to achieve this goal. However, the functional requirement was particularly demanding: the device had to deliver perfect sound quality with two different headphone brands. Initially, this seemed straightforward, but these headphone models had vastly different specifications, particularly in their speaker and microphone capabilities.
 
-The first iteration of the design was tight to the main chip manufacturer's recommendations. The sound was good, a little low from the client's perspective, but with only one headphone. The other one looks worse. This involved had to iterate the design with several rounds of simulations and passive filter study to achieve a good performance with both impedance profiles and speaker characteristics.
+The first iteration of the design closely followed the main chip manufacturer's recommendations. While the sound quality was acceptable—albeit slightly low from the client’s perspective—with one headphone, the performance with the other headphone was much worse. This required several design iterations involving extensive simulations and passive filter studies to achieve optimal performance with both impedance profiles and speaker characteristics.
+
 
 Back side of PCB
+
 ![alt text](back-render.png)
 
-In this view there is the basic input and output filters for peripherals (stereo output and mono input). With the first iteration we get complete USB functionality and key control from PC drivers (volume, mute, next, back, etc.) and the chip performs really well. After several tests with simulation and real boards we find the best filter values for power rails and also for impedance matching and noise attenuation. 
+In this view, you can see the basic input and output filters for peripherals (stereo output and mono input). In the first iteration, we achieved complete USB functionality and key control through PC drivers (volume, mute, next, back, etc.). The chip performed exceptionally well. After numerous tests using both simulations and real boards, we identified the ideal filter values for the power rails, impedance matching, and noise attenuation.
+
 
 Front side of PCB
+
 ![alt text](frontal-render.png)
 
-The final PCB was really tiny, not so dense, but with a good performance validated in simulations and laboratory. Finally, the client got the MVP of the project and went to field testing with a sample of 10 devices to distribute between his call centers. That tests were excellent and production of the device began. The first batch was about 1000 devices, none presented any problems or guarantees. After that, more productions came and went seamlessly. These devices are currently distributed in center and south america with thousands of users.
+The final PCB was very compact, but delivering excellent performance validated through simulations and lab testing. Ultimately, the client received the project’s MVP, which underwent field testing with a sample of 10 devices distributed across their call centers. These tests were excellent results, and the device entered production. The first batch of around 1,000 units was produced without any reported issues or defects. Subsequent production runs proceeded seamlessly. Today, these devices are distributed across Central and South America, with thousands of users benefiting from them.
 
-This project was very gratifying for me, because I was able to participate in the creation of a real electronic product, from its conception to mass production, for the first time of this magnitude, and seeing those devices designed by yourself being manufactured for the world is a great feeling.
+This project was immensely rewarding for me. It marked my first experience contributing to the creation of a real electronic product, from conception to mass production, on this scale. Witnessing devices I designed being manufactured and used worldwide is an incredibly gratifying experience.

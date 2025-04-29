@@ -4,7 +4,7 @@
 - Membrane keyboard interface
 - Long cable I2C port communication
 - Modern low-power 8-bit PIC microcontroller
-- 2-layer PCB designed with KiCad on 2023
+- 2-layer PCB designed with KiCad in 2023
 - Gaming industry
 
 

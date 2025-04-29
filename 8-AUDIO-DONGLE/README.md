@@ -4,7 +4,7 @@
 - USB audio device developed for call center uses
 - Optimization for audio quality and production costs
 - Audio application with single-chip solution
-- 29.5mm x 32.5mm 2-layer PCB
+- 29.5mm x 32.5mm 2-layer PCB design in 2023
 - +10k manufactured devices
 
 ## Description
